@@ -16,7 +16,7 @@ export const siteConfig: SiteConfig = {
   },
   banner: {
     enable: true,
-    src: 'assets/images/banner/banner.jpg',   // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+    src: 'assets/images/banner/banner.jpeg',   // Relative to the /src directory. Relative to the /public directory if it starts with '/'
     position: 'center',      // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
     credit: {
       enable: true,         // Display the credit text of the banner image
@@ -42,7 +42,7 @@ export const navBarConfig: NavBarConfig = {
     LinkPreset.Home,
     LinkPreset.Archive,
     {
-      name: "友联",
+      name: "友链",
       url: "/links/",
     },
     LinkPreset.About,
@@ -59,7 +59,7 @@ export const navBarConfig: NavBarConfig = {
 }
 
 export const profileConfig: ProfileConfig = {
-  avatar: 'assets/images/avatar.png',  // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+  avatar: 'assets/images/avatar.jpeg',  // Relative to the /src directory. Relative to the /public directory if it starts with '/'
   name: 'GreenRoc',
   bio: 'There is no fate but what we make for ourselves.',
   links: [
