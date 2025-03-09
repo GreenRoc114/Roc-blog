@@ -4,7 +4,7 @@ import { profileConfig } from '../config'
 import { url } from '../utils/url-utils'
 const currentYear = new Date().getFullYear()
 
-const days = new Date().getTime() - new Date("2020/08/08").getTime()
+const days = new Date().getTime() - new Date("2024/05/01").getTime()
 const numberOfDays = (days / (1000 * 60 * 60 * 24)).toFixed()
 ---
 
@@ -19,7 +19,7 @@ const numberOfDays = (days / (1000 * 60 * 60 * 24)).toFixed()
         </a>
         许可协议下提供。<br>
         如果您需要转载上述内容，请附带来源并且不可将其使用于商业用途。<br>
-        © 2020-{currentYear} {profileConfig.name}. 本站已运行 {numberOfDays} 天。<br><br>
+        © 2024-{currentYear} {profileConfig.name}. 本站已运行 {numberOfDays} 天。<br><br>
         Powered by <a class="transition link text-[var(--primary)] font-medium" target="_blank" href="https://github.com/saicaca/fuwari">Fuwari</a><br>
         </a>
     </div>
