@@ -11,17 +11,17 @@ export const siteConfig: SiteConfig = {
   subtitle: 'GreenRoc的博客',
   lang: 'zh_CN',         // 'en', 'zh_CN', 'zh_TW', 'ja', 'ko'
   themeColor: {
-    hue: 50,         // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
+    hue:180,         // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
     fixed: false,     // Hide the theme color picker for visitors
   },
   banner: {
     enable: true,
-    src: 'assets/images/banner/hyory-liu-n4018exJ9kw-unsplash.jpg',   // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+    src: 'assets/images/banner/banner.jpg',   // Relative to the /src directory. Relative to the /public directory if it starts with '/'
     position: 'center',      // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
     credit: {
       enable: true,         // Display the credit text of the banner image
-      text: 'Hyory Liu',              // Credit text to be displayed
-      url: 'https://unsplash.com/photos/brown-wooden-gazebo-near-body-of-water-during-night-time-n4018exJ9kw'                // (Optional) URL link to the original artwork or artist's page
+      text: 'Sofia Petterson',              // Credit text to be displayed
+      url: 'https://unsplash.com/photos/a-purple-and-red-sunset-over-a-river-LKS4Yoxaxcw'
     }
   },
   toc: {
@@ -59,34 +59,19 @@ export const navBarConfig: NavBarConfig = {
 }
 
 export const profileConfig: ProfileConfig = {
-  avatar: 'assets/images/avatar.jpg',  // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+  avatar: 'assets/images/avatar.png',  // Relative to the /src directory. Relative to the /public directory if it starts with '/'
   name: 'GreenRoc',
   bio: 'There is no fate but what we make for ourselves.',
   links: [
     {
       name: "GitHub",
       icon: "fa6-brands:github",
-      url: "https://github.com/MagmaBlock",
+      url: "https://github.com/GreenRoc114",
     },
     {
       name: "Bilibili",
       icon: "fa6-brands:bilibili",
-      url: "https://space.bilibili.com/6281315",
-    },
-    {
-      name: "抖音",
-      icon: "fa6-brands:tiktok",
-      url: "https://www.douyin.com/user/MS4wLjABAAAA94Smu-tBGivotmvEz1gZW9TvdhDxd0eIQex67Xma72g",
-    },
-    {
-      name: "Mastodon",
-      icon: "fa6-brands:mastodon",
-      url: "https://hydrate.space/@magma",
-    },
-    {
-      name: "邮件",
-      icon: "material-symbols:mail",
-      url: "mailto:magmablock@qq.com",
+      url: "https://space.bilibili.com/1558348500",
     },
   ],
 }
