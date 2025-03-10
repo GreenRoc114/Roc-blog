@@ -58,6 +58,13 @@ const links: { title: string; link: string; desc: string; img: string }[] = [
     img: "https://emohe.cn/_astro/demo-avatar.CryhOpiU_8OdLC.webp",
     desc: "分享docker知识，记录生活",
   },
+  {
+    link: "http://linearteam.top",
+    title: "线形团队官网",
+    img: "http://linearteam.top/wp-content/uploads/2025/03/logo-2.png",
+    desc: "线形团队LinearTeam",
+  },
+  
 ];
 
 const randomLinks = computed(() => links.sort(() => Math.random() - 0.5));
