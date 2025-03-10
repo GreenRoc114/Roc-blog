@@ -32,7 +32,7 @@ draft: false
 - 名称：Ahhf45
 - 描述：GreenRoc的博客
 - 地址：https://fuwari.ahhf45.top
-- 图片：https://
+- 图片：https://fuwari.ahhf45.top/_astro/avatar.D2SWA525_ByqDR.webp
 
 ## 已失效友联
 
