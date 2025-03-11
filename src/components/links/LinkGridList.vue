@@ -61,7 +61,7 @@ const links: { title: string; link: string; desc: string; img: string }[] = [
   {
     link: "http://linearteam.top",
     title: "线形团队官网",
-    img: "linearteam.top/wp-content/uploads/2025/03/logo-4.png",
+    img: "http://linearteam.top/wp-content/uploads/2025/03/logo-4.png",
     desc: "线形团队LinearTeam",
   },
   
