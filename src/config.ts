@@ -59,7 +59,7 @@ export const navBarConfig: NavBarConfig = {
 }
 
 export const profileConfig: ProfileConfig = {
-  avatar: 'assets/avatar.jpeg',  // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+  avatar: 'https://cd.ahhf45.top/r.php',  // Relative to the /src directory. Relative to the /public directory if it starts with '/'
   name: 'GreenRoc',
   bio: 'There is no fate but what we make for ourselves.',
   links: [
