@@ -18,6 +18,7 @@ import {
 import { defaultFavicons } from '../constants/icon'
 import type { Favicon } from '../types/config'
 import { url, pathsEqual } from '../utils/url-utils'
+import 'katex/dist/katex.css'
 
 interface Props {
   title?: string
@@ -144,11 +145,8 @@ const bannerOffset =
 
 		<slot name="head"></slot>
 
-		<link rel="stylesheet" href="https://assets.5t5.top/cdn/katex/0.16.9/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
-
 		<link rel="alternate" type="application/rss+xml" title={profileConfig.name} href={`${Astro.site}rss.xml`}/>
 
-		<script is:inline defer src="https://umami.magma.ink/script.js" data-website-id="3a98ddf6-dffa-4b99-8a0e-fd975fa496a0"></script>
 	</head>
 	<body class=" min-h-screen transition " class:list={[{"lg:is-home": isHomePage, "enable-banner": enableBanner}]}
 		  data-overlayscrollbars-initialize
@@ -307,13 +305,22 @@ function initCustomScrollbar() {
 			autoHideSuspend: false,
 		},
 	});
-	document.querySelectorAll('pre').forEach((ele) => {
+	const preElements = document.querySelectorAll('pre');
+	preElements.forEach((ele) => {
 		OverlayScrollbars(ele, {
 			scrollbars: {
 				theme: 'scrollbar-base scrollbar-dark px-2',
 				autoHide: 'leave',
 				autoHideDelay: 500,
 				autoHideSuspend: false
+			}
+		});
+	});
+	const katexElements = document.querySelectorAll('.katex-display') as NodeListOf<HTMLElement>;
+	katexElements.forEach((ele) => {
+		OverlayScrollbars(ele, {
+			scrollbars: {
+				theme: 'scrollbar-base scrollbar-auto py-1',
 			}
 		});
 	});
@@ -338,10 +345,6 @@ function init() {
 
 /* Load settings when entering the site */
 init();
-
-/* Load settings before swapping */
-/* astro:after-swap event happened before swap animation */
-document.addEventListener('astro:after-swap', init);
 
 const setup = () => {
 	// TODO: temp solution to change the height of the banner
