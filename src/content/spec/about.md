@@ -11,6 +11,16 @@
 
 ## 源代码
 
+本站部分借鉴于[https://magma.ink](https://magma.ink)这是原作者的仓库
+
+::github{repo="MagmaBlock/magma-ink"}
+
 本站是由 Astro 静态站点生成器开发的完全静态站，源码可以在 GitHub 上找到：
 
 ::github{repo="GreenRoc114/Roc-blog"}
+
+原项目
+
+::github{repo="saicaca/fuwari"}
+
+
